@@ -1,0 +1,20 @@
+Port 22
+Protocol 2
+SyslogFacility AUTH
+LogLevel INFO
+LoginGraceTime 120
+StrictModes yes
+PubkeyAuthentication yes
+IgnoreRhosts yes
+PermitEmptyPasswords no
+PermitTunnel yes
+ChallengeResponseAuthentication no
+X11Forwarding yes
+X11DisplayOffset 10
+PrintLastLog yes
+TCPKeepAlive yes
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
+UsePAM yes
+PasswordAuthentication yes
+Banner /etc/bannerssh
